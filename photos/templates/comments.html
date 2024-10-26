@@ -1,0 +1,14 @@
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'styles/users.css' %}">
+{% endblock %}
+
+{% block content %}
+{{  comments}}
+
+<form action="" method="get">
+    <textarea name="text" cols="30" rows="10"></textarea>
+    <input type="submit" value="Send">
+</form>
+{% endblock %}

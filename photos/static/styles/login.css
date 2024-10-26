@@ -1,0 +1,28 @@
+.login{
+    display: flex;
+    text-align: center;
+    width: 20vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    border: 0.5px solid;
+    border-color: rgb(113, 113, 113);
+    border-radius: 5%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.login input{
+    width: 80%;
+    height: 4vh;
+    margin-bottom: 5px;
+    border: 0.5px rgb(113, 113, 113) solid;
+    border-radius: 5%;
+}

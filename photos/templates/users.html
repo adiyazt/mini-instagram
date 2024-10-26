@@ -1,0 +1,32 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'styles/users.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="profile">
+    <div class="info">
+        <h3>User information:</h3>
+        <p><b>Full name: </b> {{ user.full_name }} </p>
+        <p><b>Email: </b> {{ user.email }} </p>
+        {% if user.info %}
+        <p><b>Info: </b> {{ user.info }} </p>
+        {% endif %}
+    </div>
+    <div class="photos">
+        {% for photo in photos %}
+            <div class="photo">
+                <div class="photo-desc">
+                <p>Likes: {{photo.likes}}</p>
+                <p>Dislikes: {{photo.dislikes}}</p>
+                <p>Text: {{photo.text}}</p></div>
+                <div class='filter-div' style="background-image: url('{{ photo.source }}'); width: 250px; height: 250px; background-size: cover; text-align: center;"></div>
+                <p><a href="{% url 'comments' photo.pk %}">Comments</a></p>
+            
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock %}

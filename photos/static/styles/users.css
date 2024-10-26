@@ -1,0 +1,36 @@
+.profile{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.photos{
+    display: flex;
+    text-align: center;
+    width: 250px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+.photo-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
